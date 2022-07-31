@@ -1,0 +1,164 @@
+.body{
+    background-color: rgb(77, 77, 77);
+}
+
+h1{
+    margin-left: 15px;
+}
+
+section{
+    height: 400px;
+}
+
+.encabezado, .menu{
+    display: flex; 
+}
+
+.navigationBarInicio{
+    height: 60px;
+    display: flex;
+
+}
+
+#menu{
+    font-size:xx-large;
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 420px;
+    transition: width 2s ;
+}
+
+#menu a:hover{
+    margin-top: -5px;
+    color: gray;
+}
+
+.menu{
+    text-decoration: none;
+    text-align:right;
+    list-style: none;
+    color: white;
+    position: relative;
+    float: right;
+   
+}
+
+.menu a{
+    display: block;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+li a, aside a{
+    text-decoration: none;
+    color: white;
+}
+
+.menu a:hover{
+    color: gray;
+}
+
+header{
+    background-color: black;
+    color: white; 
+    position: sticky;
+    top: 0px;
+    margin-bottom: 20px;
+    padding-bottom: 40px;
+}
+
+.logo{
+    height: 50px;
+    padding-left: 20px;
+}
+
+
+.texto_cliente{
+    color: grey;
+    margin-top: 50px;
+    text-align: center;
+    margin-bottom: -20px;
+}
+
+#perfil{
+   height: 350px;  
+   padding: 20px;
+}
+
+.encabezado{
+    display: flex;
+    align-items:center;
+}
+
+.pieDePagina{
+    background-color: black;
+    color: white;
+    margin-top: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: sticky;
+    bottom: 0px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sobreNosotros{
+    display: flex;
+    align-items: center;
+}
+
+.textoPresentacion{
+    margin-left: 20px;
+    width: 500px;
+    color: white;
+}
+
+.texto_contacto{
+    margin-left: 20px;
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+
+.grid_productos, .grid_servicios{
+    width: 500px;
+    height: 200px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+    }
+
+.producto, .servicio{
+    border: solid 0.1px rgb(68, 68, 68);
+    background-color: white;
+}
+
+.titulo{
+    color: white;
+    background-color: rgb(48, 48, 48);
+}
+
+.grids{
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+.titulo_clientes, .titulo_contacto, .titulo_sobre_nosotros{
+    color: gray;
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: -20px ;
+}
+
+.titulo_servicios{
+    color: gray;
+    text-align: center;
+    font-size: 50px;
+}
+
