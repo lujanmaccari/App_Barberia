@@ -1,3 +1,8 @@
+*{
+    margin: 0px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
 .body{
     background-color: rgb(77, 77, 77);
 }
@@ -10,14 +15,22 @@ section{
     height: 400px;
 }
 
-.encabezado, .menu{
+.encabezado_inicio, .menu{
     display: flex; 
 }
 
-.navigationBarInicio{
+.encabezado_inicio{
     height: 60px;
     display: flex;
-
+    background-color: black;
+    color: white; 
+    position: sticky;
+    margin-bottom: 20px;
+    padding-right: 20px;
+    display: flex;
+    align-items:center;
+    height: 120px;
+    position: sticky;
 }
 
 #menu{
@@ -43,7 +56,6 @@ section{
     color: white;
     position: relative;
     float: right;
-   
 }
 
 .menu a{
@@ -61,13 +73,21 @@ li a, aside a{
     color: gray;
 }
 
-header{
+.encabezado{
     background-color: black;
     color: white; 
     position: sticky;
-    top: 0px;
     margin-bottom: 20px;
-    padding-bottom: 40px;
+    padding-right: 20px;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    height: 120px;
+    position: sticky;
+}
+
+.navigationBar{
+    display: flex;
 }
 
 .logo{
@@ -88,22 +108,16 @@ header{
    padding: 20px;
 }
 
-.encabezado{
-    display: flex;
-    align-items:center;
-}
-
 .pieDePagina{
     background-color: black;
     color: white;
     margin-top: 5px;
     padding-left: 15px;
     padding-right: 15px;
+    padding-top: 7px;
     position: sticky;
-    bottom: 0px;
-    height: 50px;
+    height: 40px;
     display: flex;
-    align-items: center;
     justify-content: space-between;
 }
 
