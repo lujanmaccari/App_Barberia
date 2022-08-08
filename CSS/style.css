@@ -15,7 +15,7 @@ section{
     height: 400px;
 }
 
-.encabezado_inicio, .menu{
+.encabezado_inicio, .nav{
     display: flex; 
 }
 
@@ -49,28 +49,9 @@ section{
     color: gray;
 }
 
-.menu{
-    text-decoration: none;
-    text-align:right;
-    list-style: none;
-    color: white;
-    position: relative;
-    float: right;
-}
-
-.menu a{
-    display: block;
-    padding-left: 5px;
-    padding-right: 5px;
-}
-
 li a, aside a{
     text-decoration: none;
     color: white;
-}
-
-.menu a:hover{
-    color: gray;
 }
 
 .encabezado{
@@ -86,16 +67,10 @@ li a, aside a{
     position: sticky;
 }
 
-.navigationBar{
-    display: flex;
-    align-items: center;
-}
-
 .logo{
     height: 50px;
     padding-left: 20px;
 }
-
 
 .texto_cliente{
     color: grey;
@@ -167,7 +142,8 @@ li a, aside a{
     color: gray;
     text-align: center;
     font-size: 50px;
-    margin-bottom: -20px ;
+    margin-bottom: -20px;
+    font-weight:bold;
 }
 
 .titulo_servicios{
@@ -180,18 +156,6 @@ li a, aside a{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-}
-
-.imagen_clientes{
-    height: 230px;
-    margin-bottom: -30px;
-    filter: grayscale(100%);
-    transition: all 1s;
-}
-
-.imagen_clientes:hover{
-    filter: grayscale(0);
-    transform: scale(1.2);
 }
 
 @media (max-width: 500px){
@@ -217,6 +181,7 @@ li a, aside a{
     .titulo_clientes, .titulo_contacto, .titulo_sobre_nosotros, .titulo_servicios{
         font-size: 30px;
         margin-bottom: -40px;
+        font-weight:bold;
     }
 
     .logo{
@@ -237,6 +202,8 @@ li a, aside a{
 
     .imagen_clientes{
         padding-bottom: 50px;
+        height: 230px;
+        margin-bottom: -30px;
     }
 
     .textoPresentacion, .texto_contacto{
@@ -250,6 +217,7 @@ li a, aside a{
         flex-direction: column;
         justify-content: space-evenly;
         height: 200px;
+        margin-top: 80px;
     }
 
     .grids{
@@ -270,10 +238,26 @@ li a, aside a{
         margin-top: 5px;
         position: fixed;
         bottom: 0px;
-        height: 30px;
+        height: 40px;
         width: 100%;
         display: flex;
         justify-content: space-evenly;
         align-items: baseline;
     }
+}
+
+@media (min-width: 501px){
+    
+.imagen_clientes{
+    height: 230px;
+    margin-bottom: -30px;
+    filter: grayscale(100%);
+    transition: all 1s;
+}
+
+.imagen_clientes:hover{
+    filter: grayscale(0);
+    transform: scale(1.2);
+}
+
 }
