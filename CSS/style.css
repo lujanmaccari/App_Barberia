@@ -88,6 +88,7 @@ li a, aside a{
 
 .navigationBar{
     display: flex;
+    align-items: center;
 }
 
 .logo{
@@ -160,7 +161,6 @@ li a, aside a{
 .grids{
     display: flex;
     justify-content: space-evenly;
-    
 }
 
 .titulo_clientes, .titulo_contacto, .titulo_sobre_nosotros{
@@ -194,3 +194,86 @@ li a, aside a{
     transform: scale(1.2);
 }
 
+@media (max-width: 500px){
+
+    .contenidoGeneral{
+        overflow: scroll;
+    }
+
+    #menu{
+        font-size:  20px;;
+        text-decoration: none;
+        list-style: none;
+    }
+
+    .menu{
+        display: none;
+    }
+
+    h1{
+       font-size: 25px;
+    }
+
+    .titulo_clientes, .titulo_contacto, .titulo_sobre_nosotros, .titulo_servicios{
+        font-size: 30px;
+        margin-bottom: -40px;
+    }
+
+    .logo{
+        height: 40px;
+    }
+
+    .navigationBar{
+        display: flex;
+        align-items: center;
+    }
+
+    .section_clientes, .sobreNosotros, .grids{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: 40px;
+    }
+
+    .imagen_clientes{
+        padding-bottom: 50px;
+    }
+
+    .textoPresentacion, .texto_contacto{
+        width: 300px;
+        text-align:justify;
+    }
+
+    .texto_contacto{
+        display: flex;
+        text-align: justify;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 200px;
+    }
+
+    .grids{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-bottom: 50px;
+    }
+
+    .grid_productos, .grid_servicios{
+        width: 320px;
+    }
+
+    .pieDePagina{
+        background-color: black;
+        color: white;
+        margin-top: 5px;
+        position: fixed;
+        bottom: 0px;
+        height: 30px;
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: baseline;
+    }
+}
