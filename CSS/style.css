@@ -136,6 +136,7 @@ li a, aside a{
 .grids{
     display: flex;
     justify-content: space-evenly;
+    margin-bottom: 80px;
 }
 
 .titulo_clientes, .titulo_contacto, .titulo_sobre_nosotros{
@@ -229,8 +230,11 @@ li a, aside a{
         margin-bottom: 50px;
     }
 
+
+
     .grid_productos, .grid_servicios{
         width: 320px;
+        margin-bottom: 30px;
     }
 
     .pieDePagina{
