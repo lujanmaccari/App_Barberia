@@ -1,165 +1,70 @@
-*{
-    margin: 0px;
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-
-.body{
-    background-color: rgb(77, 77, 77);
-}
-
-h1{
-    margin-left: 15px;
-}
-
-section{
-    height: 400px;
-}
-
-.encabezado_inicio, .nav{
-    display: flex; 
-}
-
-.encabezado_inicio{
-    height: 60px;
-    display: flex;
-    background-color: black;
-    color: white; 
-    margin-bottom: 20px;
-    padding-right: 20px;
-    display: flex;
-    align-items:center;
-    height: 120px;
-    position: sticky;
-}
-
-#menu{
-    font-size:xx-large;
+@media (max-width: 500px) {
+  .contenidoGeneral {
+    overflow: scroll;
+    height: auto;
+  }
+  #menu {
+    font-size: 20px;
     text-decoration: none;
     list-style: none;
+  }
+  .menu {
+    display: none;
+  }
+  h1 {
+    font-size: 25px;
+  }
+  .titulo_clientes, .titulo_contacto, .titulo_sobre_nosotros, .titulo_servicios {
+    font-size: 30px;
+    margin-bottom: -40px;
+    font-weight: bold;
+  }
+  .logo {
+    height: 40px;
+  }
+  .navigationBar {
     display: flex;
-    justify-content: space-around;
     align-items: center;
-    height: 420px;
-    transition: width 2s ;
-}
-
-#menu a:hover{
-    margin-top: -5px;
-    color: gray;
-}
-
-li a, aside a{
-    text-decoration: none;
-    color: white;
-}
-
-.encabezado{
-    background-color: black;
-    color: white; 
-    position: sticky;
-    top: 0px;    
-    margin-bottom: 20px;
-    padding-right: 20px;
+  }
+  .section_clientes, .sobreNosotros, .grids {
     display: flex;
-    align-items:center;
+    flex-direction: column;
     justify-content: space-between;
-    height: 120px;
-    position: sticky;
-}
-
-.logo{
-    height: 50px;
-    padding-left: 20px;
-}
-
-.texto_cliente{
-    color: grey;
-    margin-top: 50px;
-    text-align: center;
-    margin-bottom: -20px;
-}
-
-#perfil{
-   height: 350px;  
-   padding: 20px;
-}
-
-.pieDePagina{
+    margin-top: 40px;
+  }
+  .imagen_clientes {
+    padding-bottom: 50px;
+    height: 230px;
+    margin-bottom: -30px;
+  }
+  .textoPresentacion, .texto_contacto {
+    width: 300px;
+    text-align: justify;
+  }
+  .texto_contacto {
+    display: flex;
+    text-align: justify;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 200px;
+    margin-top: 80px;
+  }
+  .grids {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+  .grid_productos, .grid_servicios {
+    width: 320px;
+    margin-bottom: 30px;
+  }
+  .pieDePagina {
     background-color: black;
     color: white;
     margin-top: 5px;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-top: 7px;
-    position: sticky;
-    height: 40px;
-    display: flex;
-    justify-content: space-between;
-}
-
-.sobreNosotros{
-    display: flex;
-    align-items: center;
-}
-
-.textoPresentacion{
-    margin-left: 20px;
-    width: 500px;
-    color: white;
-}
-
-.texto_contacto{
-    margin-left: 20px;
-    margin-top: 50px;
-    margin-bottom: 40px;
-}
-
-.grid_productos, .grid_servicios{
-    width: 500px;
-    height: 200px;
-    padding: 20px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 5px;
-    }
-
-.producto, .servicio{
-    border: solid 0.1px rgb(68, 68, 68);
-    background-color: white;
-}
-
-.titulo{
-    color: white;
-    background-color: rgb(48, 48, 48);
-}
-
-.grids{
-    display: flex;
-    justify-content: space-evenly;
-    margin-bottom: 80px;
-}
-
-.titulo_clientes, .titulo_contacto, .titulo_sobre_nosotros{
-    color: gray;
-    text-align: center;
-    font-size: 50px;
-    margin-bottom: -20px;
-    font-weight:bold;
-}
-
-.titulo_servicios{
-    color: gray;
-    text-align: center;
-    font-size: 50px;
-}
-
-.section_clientes{
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-}
-
-.pieDePagina{
+    position: -webkit-sticky;
     position: sticky;
     bottom: 0px;
     height: 40px;
@@ -167,112 +72,197 @@ li a, aside a{
     display: flex;
     justify-content: space-evenly;
     align-items: baseline;
+  }
 }
-
-@media (max-width: 500px){
-
-    .contenidoGeneral{
-        overflow: scroll;
-        height: auto;
-    }
-
-    #menu{
-        font-size:  20px;;
-        text-decoration: none;
-        list-style: none;
-    }
-
-    .menu{
-        display: none;
-    }
-
-    h1{
-       font-size: 25px;
-    }
-
-    .titulo_clientes, .titulo_contacto, .titulo_sobre_nosotros, .titulo_servicios{
-        font-size: 30px;
-        margin-bottom: -40px;
-        font-weight:bold;
-    }
-
-    .logo{
-        height: 40px;
-    }
-
-    .navigationBar{
-        display: flex;
-        align-items: center;
-    }
-
-    .section_clientes, .sobreNosotros, .grids{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        margin-top: 40px;
-    }
-
-    .imagen_clientes{
-        padding-bottom: 50px;
-        height: 230px;
-        margin-bottom: -30px;
-    }
-
-    .textoPresentacion, .texto_contacto{
-        width: 300px;
-        text-align:justify;
-    }
-
-    .texto_contacto{
-        display: flex;
-        text-align: justify;
-        flex-direction: column;
-        justify-content: space-evenly;
-        height: 200px;
-        margin-top: 80px;
-    }
-
-    .grids{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
-        margin-bottom: 50px;
-    }
-
-
-
-    .grid_productos, .grid_servicios{
-        width: 320px;
-        margin-bottom: 30px;
-    }
-
-    .pieDePagina{
-        background-color: black;
-        color: white;
-        margin-top: 5px;
-        position: sticky;
-        bottom: 0px;
-        height: 40px;
-        width: 100%;
-        display: flex;
-        justify-content: space-evenly;
-        align-items: baseline;
-    }
-}
-
-@media (min-width: 600px){
-    
-.imagen_clientes{
+@media (min-width: 600px) {
+  .imagen_clientes {
     height: 230px;
     margin-bottom: -30px;
     filter: grayscale(100%);
-    transition: all 1s;
-}
-
-.imagen_clientes:hover{
+    transition: all 0.6s;
+  }
+  .imagen_clientes:hover {
     filter: grayscale(0);
     transform: scale(1.2);
+  }
+}
+* {
+  margin: 0px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
+.body {
+  background-color: rgb(77, 77, 77);
 }
+
+h1 {
+  margin-left: 15px;
+}
+
+section {
+  height: 400px;
+}
+
+.encabezado_inicio, .nav {
+  display: flex;
+}
+
+.encabezado_inicio, .encabezado {
+  height: 60px;
+  display: flex;
+  background-color: black;
+  color: white;
+  margin-bottom: 20px;
+  padding-right: 20px;
+  display: flex;
+  align-items: center;
+  height: 120px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+}
+
+.encabezado {
+  justify-content: space-between;
+}
+
+.navigationBar {
+  display: flex;
+  align-items: center;
+}
+
+#menu {
+  font-size: xx-large;
+  text-decoration: none;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 420px;
+  transition: width 2s;
+}
+#menu a:hover {
+  margin-top: -5px;
+  color: grey;
+}
+
+li {
+  list-style: none;
+}
+li a {
+  text-decoration: none;
+  color: white;
+}
+
+aside {
+  list-style: none;
+}
+aside a {
+  text-decoration: none;
+  color: white;
+}
+
+footer p {
+  color: grey;
+}
+footer p a {
+  text-decoration: none;
+  color: white;
+}
+
+.logo {
+  height: 50px;
+  padding-left: 20px;
+}
+
+#perfil {
+  height: 350px;
+  padding: 20px;
+}
+
+.sobreNosotros {
+  display: flex;
+  align-items: center;
+}
+
+.texto_cliente {
+  color: grey;
+  margin-top: 50px;
+  text-align: center;
+  margin-bottom: -20px;
+}
+
+.textoPresentacion {
+  margin-left: 20px;
+  width: 500px;
+  color: white;
+}
+
+.texto_contacto {
+  margin-left: 20px;
+  margin-top: 50px;
+  margin-bottom: 40px;
+}
+
+.grid_productos, .grid_servicios {
+  width: 500px;
+  height: 200px;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5px;
+}
+
+.producto, .servicio {
+  border: solid 0.1px rgb(68, 68, 68);
+  background-color: white;
+}
+
+.titulo {
+  color: white;
+  background-color: rgb(48, 48, 48);
+}
+
+.grids {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 80px;
+}
+
+.titulo_clientes, .titulo_contacto, .titulo_sobre_nosotros {
+  color: grey;
+  text-align: center;
+  font-size: 50px;
+  margin-bottom: -20px;
+  font-weight: bold;
+}
+
+.titulo_servicios {
+  color: grey;
+  text-align: center;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.section_clientes {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.pieDePagina {
+  background-color: black;
+  color: white;
+  margin-top: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 7px;
+  height: 40px;
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: 0px;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: baseline;
+}/*# sourceMappingURL=style.css.map */
