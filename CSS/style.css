@@ -24,7 +24,6 @@ section{
     display: flex;
     background-color: black;
     color: white; 
-    position: sticky;
     margin-bottom: 20px;
     padding-right: 20px;
     display: flex;
@@ -58,6 +57,7 @@ li a, aside a{
     background-color: black;
     color: white; 
     position: sticky;
+    top: 0px;    
     margin-bottom: 20px;
     padding-right: 20px;
     display: flex;
@@ -159,6 +159,16 @@ li a, aside a{
     justify-content: space-evenly;
 }
 
+.pieDePagina{
+    position: sticky;
+    bottom: 0px;
+    height: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: baseline;
+}
+
 @media (max-width: 500px){
 
     .contenidoGeneral{
@@ -241,7 +251,7 @@ li a, aside a{
         background-color: black;
         color: white;
         margin-top: 5px;
-        position: fixed;
+        position: sticky;
         bottom: 0px;
         height: 40px;
         width: 100%;
