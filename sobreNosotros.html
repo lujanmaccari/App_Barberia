@@ -12,7 +12,7 @@
     <link rel="shortcout icon" href="../Barberia_Maccari/Images/logo_peluqueria.jpeg">
 </head>
 <body class="body">
-    <div class="encabezado">
+    <div class="encabezado sticky-top">
         <header class="navigationBar">
             <img src="./Images/logo_peluqueria.jpeg" alt="logo" class="logo">
             <h1>New Vision</h1> 
@@ -45,23 +45,46 @@
           </div>
       </nav>
     </div>
-    <!--no va a haber tanto texto, es solo para mostrar el position: sticky del footer-->
-    <div class="contenidoGeneral">
+    
+    <div class="contenidoGeneralSobreNosotros">
         <h2 class="titulo_sobre_nosotros">Sobre Nosotros</h2>
         
-        <section class="sobreNosotros">
-            <img src="./Images/img_leo.jpeg" alt="foto_perfil" id="perfil">
-            <p class="textoPresentacion">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa dolorem fugiat natus omnis. Similique quasi, natus, exercitationem accusamus suscipit iure repellendus laborum tempora animi ipsa quia, molestias harum dignissimos libero. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa dolorem fugiat natus omnis. Similique quasi, natus, exercitationem accusamus suscipit iure repellendus laborum tempora animi ipsa quia, molestias harum dignissimos libero.
-            </p>
-        </section>
+        <div class="row">
+            <div class="col-xl-6">
+                
+                <div class="card mb-3 bg-transparent" style="width: 700px;height: 350px; margin-bottom: 100px; display: flex; justify-content: space-evenly;">
+                    <div class="row g-0">
+                      <div class="col-md-4">
+                        <img src="./Images/img_leo.jpeg" class="img-fluid rounded-start" alt="...">
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body ">
+                            <h5 class="card-title fw-bold">Un poco de mi historia</h5>
+                            <p class="card-text text-start">
+                                Mi nombre es Pablo Leonardo Aymard, mis amigos me dicen Leo. Tengo 23 años, nací y me crié en el barrio Piedrabuena en Lugano, y hace dos años que vivo en Núñez.
+                                <br>
+                                Soy coiffeur, hace 4 años, trabajo con mi mentor ErnestoDinardi, de quien aprendí todo los relacionado a lapeluquería, además, hice 2 niveles del curso de Barbero enel IAB, Instituto Argentino de Barbería.
+                                <br>  
+                                Hace 8 meses cree New Vision, este proyecto no es sólo untrabajo para mí, sino que es una oportunidad de generar mipropia marca y cumplir mi sueño, el cual es que mi nombrese conozca en este rubro.
+                                <br>   
+                                El fin de esta marca no es la plata ni los clientes quevan y    vienen, es crear una comunidad que crezca junto coneste proyecto, una familia, donde cada persona que entrepor la puerta se vaya cargada de energía positiva y buenasvibras, feliz con su cambio.</p>
+                        </div>
+                      </div>
+                    </div>
+                </div>
 
-        <footer class="pieDePagina">
-            <p>©New Vision</p>
-            <aside>
-                <a href="https://wa.me/message/5BDMEVP63KDIP1">Whatsapp</a>
-            </aside>
-            <p><a href="https://acortar.link/qIK5mq">Belgrano, CABA</a></p>
-        </footer>
+            </div>
+        </div>
+
+        <div class="fixed-bottom">
+            <footer class="pieDePagina">
+                <p>©New Vision</p>
+                <aside>
+                    <a href="https://wa.me/message/5BDMEVP63KDIP1">Whatsapp</a>
+                </aside>
+                <p><a href="https://acortar.link/qIK5mq">Belgrano, CABA</a></p>
+            </footer>
+        </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </body>
