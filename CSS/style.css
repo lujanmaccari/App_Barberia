@@ -36,7 +36,7 @@ section {
   justify-content: space-between;
 }
 
-.navigationBar, .sobreNosotros, .tarjetasContacto, .section_clientes, #menu {
+.navigationBar, .tarjetasContacto, .section_clientes, #menu {
   display: flex;
   align-items: center;
 }
@@ -109,16 +109,39 @@ footer p a {
   margin-bottom: -20px;
 }
 
-.textoPresentacion {
-  margin-left: 20px;
-  width: 500px;
-  color: white;
-}
-
 .texto_contacto {
   margin-left: 20px;
   margin-top: 50px;
   margin-bottom: 40px;
+}
+
+.contenidoGeneralSN {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contenido_mi_historia {
+  background-color: grey;
+  height: 1000px;
+  width: 700px;
+  overflow: scroll;
+  padding: 50px;
+  margin: 50px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.texto_mi_historia {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.titulo_tarjeta_SN {
+  font-size: bold;
 }
 
 .grid_productos, .grid_servicios {
@@ -177,12 +200,18 @@ footer p a {
 @media (max-width: 500px) {
   .contenidoGeneral {
     overflow: scroll;
-    height: auto;
   }
   #menu {
     font-size: 20px;
     text-decoration: none;
     list-style: none;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
   }
   .menu {
     display: none;
@@ -198,7 +227,7 @@ footer p a {
   .logo {
     height: 40px;
   }
-  .navigationBar, #menu, .tarjetasContacto, .sobreNosotros, .section_clientes {
+  .navigationBar, #menu, .tarjetasContacto, .section_clientes {
     display: flex;
     align-items: center;
   }
@@ -240,8 +269,7 @@ footer p a {
     background-color: black;
     color: white;
     margin-top: 5px;
-    position: -webkit-sticky;
-    position: sticky;
+    position: fixed;
     bottom: 0px;
     height: 40px;
     width: 100%;
@@ -256,6 +284,7 @@ footer p a {
     margin-bottom: -30px;
     filter: grayscale(100%);
     transition: all 0.6s;
+    border-radius: 10px;
   }
   .imagen_clientes:hover {
     filter: grayscale(0);

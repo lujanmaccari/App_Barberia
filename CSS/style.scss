@@ -4,8 +4,8 @@ $estilos: (
     light-mode: white,
     dark-mode: black,
     color-default: grey
-    font: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
-);
+/*     font: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+ */);
 
 @mixin sizes ($width, $heigth){
     width: $width;
@@ -30,8 +30,8 @@ h1{
 }
 
 section{
-/*     height: 400px;
- */}
+    height: 400px;
+}
 
 .encabezado_inicio, .nav{
     display: flex; 
@@ -129,10 +129,6 @@ footer{
     justify-content: space-evenly;
 }
 
-.sobreNosotros{
-    @extend .navigationBar;
-}
-
 .texto_cliente{
     color: map-get($estilos,color-default);
     margin-top: 50px;
@@ -144,6 +140,35 @@ footer{
     margin-left: 20px;
     margin-top: 50px;
     margin-bottom: 40px;
+}
+
+.contenidoGeneralSN{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contenido_mi_historia{
+    background-color:map-get($estilos, color-default);
+    height: 1000px;
+    width: 700px;
+    overflow: scroll;
+    padding: 50px;
+    margin: 50px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.texto_mi_historia{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+
+.titulo_tarjeta_SN{
+    font-size: bold;
 }
 
 .grid_productos, .grid_servicios{
@@ -206,14 +231,20 @@ footer{
 
     .contenidoGeneral{
         overflow: scroll;
-        height: auto;
     }
 
     #menu{
-        font-size:  20px;;
+        font-size: 20px;
         text-decoration: none;
         list-style: none;
-    }
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        top: 0px;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+    } 
 
     .menu{
         display: none;
@@ -284,7 +315,7 @@ footer{
         background-color:  map-get($estilos, dark-mode);
         color:  map-get($estilos, light-mode);
         margin-top: 5px;
-        position: sticky;
+        position: fixed;
         bottom: 0px;
         height: 40px;
         width: 100%;
@@ -292,7 +323,9 @@ footer{
         justify-content: space-evenly;
         align-items: baseline;
     }
+
 }
+
 
 @media (min-width: 600px){
     
@@ -301,6 +334,7 @@ footer{
     margin-bottom: -30px;
     filter: grayscale(100%);
     transition: all 0.6s;
+    border-radius: 10px;
 }
 
 .imagen_clientes{
