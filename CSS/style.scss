@@ -67,7 +67,8 @@ section{
     list-style: none;
     justify-content: space-around;
     height: 420px;
-    transition: width 2s ;
+    margin-left: -35px;
+    transition: width 2s;
     a{
         &:hover{
             margin-top: -5px;
@@ -171,29 +172,41 @@ footer{
     font-size: bold;
 }
 
-.grid_productos, .grid_servicios{
+.contenidoGeneralServicios{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.list-group{
+    width: 1100px;
+    margin: 50px;
+}
+
+/* .grid_productos, .grid_servicios{
     @include sizes(500px, 200px);
     padding: 20px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 5px;
-    }
+} */
 
-.producto, .servicio{
+/* .producto, .servicio{
     border: solid 0.1px rgb(68, 68, 68);
     background-color: map-get($estilos,light-mode);
-}
+} */
+
+/* .grids{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 80px;
+} */
 
 .titulo{
     color: map-get($estilos,light-mode);
     background-color: map-get($estilos, background-color-secondary);
 }
 
-.grids{
-    display: flex;
-    justify-content: space-evenly;
-    margin-bottom: 80px;
-}
 
 .titulo_servicios{
     color:  map-get($estilos,color-default);
@@ -240,10 +253,8 @@ footer{
         display: flex;
         flex-direction: column;
         position: relative;
-        top: 0px;
-        bottom: 0px;
-        left: 0px;
-        right: 0px;
+        margin-left: -35px;
+        margin-top: 40px;
     } 
 
     .menu{
@@ -269,17 +280,34 @@ footer{
         align-items: center;
     }
 
-    .section_clientes, .sobreNosotros, .grids{
+    .section_clientes, .sobreNosotros{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         margin-top: 40px;
+        height: 1000px;
+    }
+
+    .grids{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: 40px;
+        height: 700px
+    }
+    
+
+    .tarjetasContacto{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     }
 
     .imagen_clientes{
         padding-bottom: 50px;
-        height: 230px;
+        height: 450px;
         margin-bottom: -30px;
+        border-radius: 10px;
     }
 
     .textoPresentacion, .texto_contacto{
@@ -296,20 +324,35 @@ footer{
         margin-top: 80px;
     }
 
-    .grids{
+    .contenido_mi_historia{
+        height: 950px;
+        width: 300px;
+        overflow: scroll;
+        padding: 20px;
+        margin: 50px;
+    }
+
+    .contenidoGeneralServicios{
+        height: 500px;
+    }
+
+    .list-group{
+        width: 320px;
+        margin-top: 65px;
+        margin-bottom: 30px;
+    }
+
+    /* .grids{
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
         align-items: center;
-        margin-bottom: 50px;
     }
-
-
 
     .grid_productos, .grid_servicios{
         width: 320px;
         margin-bottom: 30px;
-    }
+    } */
 
     .pieDePagina{
         background-color:  map-get($estilos, dark-mode);
@@ -341,6 +384,7 @@ footer{
     &:hover{
     filter: grayscale(0);
     transform: scale(1.2);
+    z-index: 1;
 }
 }
 
