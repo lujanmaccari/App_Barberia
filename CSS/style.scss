@@ -67,6 +67,7 @@ section{
     list-style: none;
     justify-content: space-around;
     height: 420px;
+    margin-top: 110px;
     margin-left: -35px;
     transition: width 2s;
     a{
@@ -232,7 +233,7 @@ footer{
     padding-left: 15px;
     padding-right: 15px;
     padding-top: 7px;
-    position: sticky;
+    position: fixed;
     bottom: 0px;
     display: flex;
     justify-content: space-evenly;
