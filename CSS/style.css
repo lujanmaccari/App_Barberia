@@ -47,7 +47,6 @@ section {
   list-style: none;
   justify-content: space-around;
   height: 420px;
-  margin-top: 110px;
   margin-left: -35px;
   transition: width 2s;
 }
@@ -78,6 +77,13 @@ footer p {
 footer p a {
   text-decoration: none;
   color: white;
+}
+footer p a:hover {
+  color: grey;
+}
+
+footer aside a:hover {
+  color: grey;
 }
 
 .logo {

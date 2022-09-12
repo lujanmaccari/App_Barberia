@@ -67,7 +67,6 @@ section{
     list-style: none;
     justify-content: space-around;
     height: 420px;
-    margin-top: 110px;
     margin-left: -35px;
     transition: width 2s;
     a{
@@ -101,7 +100,21 @@ footer{
         a{
             @include text-decoration;
             color: map-get($estilos,light-mode);
+            &:hover{
+                color:map-get($estilos,color-default);
+            } 
+
         }
+    }
+}
+
+footer{
+    aside{
+       a{
+        &:hover{
+            color:map-get($estilos,color-default);
+        } 
+       }
     }
 }
 
